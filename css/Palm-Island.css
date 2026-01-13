@@ -1,0 +1,110 @@
+div.info {
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+}
+
+@media all and (max-width: 550px) {
+    div.info {
+        text-align: center;
+    }
+}
+
+div.info pre {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    line-height: 14px;
+}
+
+div.out-view {
+    position: absolute;
+    margin: 5px;
+}
+
+div.card {
+    position: absolute;
+    /* transition-property: left, top, transform; */
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+card {
+    /* border: solid #999 2px; */
+    box-sizing: border-box;
+    border-radius: 12px;
+    transition: all .5s;
+}
+
+
+/* div.button-panel {
+    margin-top: 660px;
+} */
+
+button {
+    margin: 1px;
+    padding: 4px;
+    position: relative;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    width: 128px;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+}
+
+button:after {
+    content: "";
+    display: block;
+    /* 不占据内容空间 */
+    position: absolute;
+    border-radius: 50%;
+    padding: 300%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+button:active:after {
+    padding: 0;
+    opacity: .6;
+    transition: 0s;
+}
+
+button.green {
+    background-color: #4daf52;
+}
+
+button.green:after {
+    background: #5b5;
+}
+
+button.blue {
+    background-color: #0b61ac;
+}
+
+button.blue:after {
+    background: #2176d3;
+}
+
+button.yellow {
+    background-color: #fcbe06;
+}
+
+button.yellow:after {
+    background: #fc3;
+}
+
+button.red {
+    background-color: #b53026;
+}
+
+button.red:after {
+    background: #f54;
+}

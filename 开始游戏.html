@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>棕榈岛</title>
+    <link rel="stylesheet" href="css/Palm-Island.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <div class="info"><pre></pre></div>
+    <div class="out-view"></div>
+    <div class="button-panel">
+        <button class="green" onclick="store(16)">横置第1张卡</button>
+        <button class="green" onclick="store(15)">横置第2张卡</button><br>
+        <button class="yellow" onclick="rotate(16)">旋转第1张卡</button>
+        <button class="yellow" onclick="rotate(15)">旋转第2张卡</button><br>
+        <button class="blue" onclick="flip(16)">翻转第1张卡</button>
+        <button class="blue" onclick="flip(15)">翻转第2张卡</button><br>
+        <button class="red" onclick="pushDeck(0)">弃掉/完成第1张卡</button>
+        <button class="red" onclick="pushDeck(1)">完成第2张卡</button><br>
+        <!-- <button class="green" onclick="showScore()">计分</button> -->
+        <!-- <button class="red" onclick="undo()">恢复</button> -->
+    </div>
+
+</body>
+<script src="js/common.js"></script>
+<script src="js/class.js"></script>
+<script src="js/card.js"></script>
+<script src="js/Palm-Island.js"></script>
+
+</html>
